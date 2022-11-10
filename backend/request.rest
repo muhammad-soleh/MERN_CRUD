@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/636ce43eec3558d85a562017
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "lehzo",
+    "email": "lehzo@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5000/users/636ce43eec3558d85a562017
+Content-Type: application/json
+
+{
+    "name": "Jajang",
+    "email": "Jajang@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/636ce43eec3558d85a562017
